@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="Bicyclo" customModuleProvider="target">
+            <connections>
+                <outlet property="bicycleDesc" destination="ZSb-Cv-qwI" id="44i-wr-vHw"/>
+                <outlet property="bicycleImage" destination="iPu-es-aPd" id="j79-7X-6e2"/>
+                <outlet property="bicycleName" destination="X32-l2-PgF" id="oeu-hi-3eZ"/>
+                <outlet property="bicyclePrice" destination="1VF-6H-at0" id="9y3-IC-Ck8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iPu-es-aPd">
+                    <rect key="frame" x="0.0" y="44" width="414" height="383"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="iPu-es-aPd" secondAttribute="height" multiplier="414:383" id="f4I-Vl-49R"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X32-l2-PgF">
+                    <rect key="frame" x="20" y="430" width="311" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1VF-6H-at0">
+                    <rect key="frame" x="341" y="435" width="53" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNQ-9o-GNm">
+                    <rect key="frame" x="160" y="782" width="94" height="40"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="bTL-Z8-ybm"/>
+                    </constraints>
+                    <state key="normal" title="Buy Now">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSb-Cv-qwI">
+                    <rect key="frame" x="20" y="474" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="nNQ-9o-GNm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="19l-I4-7ec"/>
+                <constraint firstAttribute="trailing" secondItem="iPu-es-aPd" secondAttribute="trailing" id="3JW-EI-7Hp"/>
+                <constraint firstItem="1VF-6H-at0" firstAttribute="top" secondItem="iPu-es-aPd" secondAttribute="bottom" constant="8" id="5mw-fA-BOt"/>
+                <constraint firstItem="iPu-es-aPd" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="796-fK-4CH"/>
+                <constraint firstItem="X32-l2-PgF" firstAttribute="top" secondItem="iPu-es-aPd" secondAttribute="bottom" constant="3" id="C7l-Cm-8OU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nNQ-9o-GNm" secondAttribute="trailing" constant="160" id="IUt-mQ-GJZ"/>
+                <constraint firstItem="iPu-es-aPd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="MkN-eg-dnW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1VF-6H-at0" secondAttribute="trailing" constant="20" id="PtM-0D-07u"/>
+                <constraint firstItem="iPu-es-aPd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WDq-kO-586"/>
+                <constraint firstItem="iPu-es-aPd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Y9T-af-RTr"/>
+                <constraint firstItem="1VF-6H-at0" firstAttribute="leading" secondItem="X32-l2-PgF" secondAttribute="trailing" constant="10" id="aN9-me-a1u"/>
+                <constraint firstItem="nNQ-9o-GNm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="160" id="aTG-UM-uYx"/>
+                <constraint firstItem="ZSb-Cv-qwI" firstAttribute="top" secondItem="X32-l2-PgF" secondAttribute="bottom" constant="8" id="bFQ-bT-ZkF"/>
+                <constraint firstItem="iPu-es-aPd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="gQd-VA-wy9"/>
+                <constraint firstItem="ZSb-Cv-qwI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="gzZ-a8-4si"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nNQ-9o-GNm" secondAttribute="bottom" constant="40" id="heF-CJ-UpM"/>
+                <constraint firstItem="1VF-6H-at0" firstAttribute="leading" secondItem="X32-l2-PgF" secondAttribute="trailing" constant="10" id="q2m-hO-3u4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZSb-Cv-qwI" secondAttribute="trailing" constant="20" id="qVL-Ci-lfx"/>
+                <constraint firstItem="X32-l2-PgF" firstAttribute="top" secondItem="iPu-es-aPd" secondAttribute="bottom" constant="3" id="qYJ-Xk-2VJ"/>
+                <constraint firstItem="X32-l2-PgF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="sQb-MF-Aak"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </view>
+    </objects>
+</document>

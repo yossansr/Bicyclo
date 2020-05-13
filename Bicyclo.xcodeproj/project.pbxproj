@@ -13,6 +13,14 @@
 		8E1CE49A24593E050034EC03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1CE49824593E050034EC03 /* Main.storyboard */; };
 		8E1CE49C24593E070034EC03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E1CE49B24593E070034EC03 /* Assets.xcassets */; };
 		8E1CE49F24593E070034EC03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1CE49D24593E070034EC03 /* LaunchScreen.storyboard */; };
+		8E1CE4AC24593E810034EC03 /* Bicycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1CE4AB24593E810034EC03 /* Bicycle.swift */; };
+		8E1CE4AF24593F2E0034EC03 /* BicycleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1CE4AD24593F2E0034EC03 /* BicycleTableViewCell.swift */; };
+		8E1CE4B024593F2E0034EC03 /* BicycleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E1CE4AE24593F2E0034EC03 /* BicycleTableViewCell.xib */; };
+		8E1CE4B2245943120034EC03 /* DummyBicycles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1CE4B1245943120034EC03 /* DummyBicycles.swift */; };
+		8E701557245E69120089D7CC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E701555245E69120089D7CC /* DetailViewController.swift */; };
+		8E701558245E69120089D7CC /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E701556245E69120089D7CC /* DetailViewController.xib */; };
+		8ED85525246B8E5E00E67308 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED85523246B8E5E00E67308 /* ProfileViewController.swift */; };
+		8ED85526246B8E5E00E67308 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED85524246B8E5E00E67308 /* ProfileViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		8E1CE49B24593E070034EC03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E1CE49E24593E070034EC03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E1CE4A024593E070034EC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E1CE4AB24593E810034EC03 /* Bicycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bicycle.swift; sourceTree = "<group>"; };
+		8E1CE4AD24593F2E0034EC03 /* BicycleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BicycleTableViewCell.swift; sourceTree = "<group>"; };
+		8E1CE4AE24593F2E0034EC03 /* BicycleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BicycleTableViewCell.xib; sourceTree = "<group>"; };
+		8E1CE4B1245943120034EC03 /* DummyBicycles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyBicycles.swift; sourceTree = "<group>"; };
+		8E701555245E69120089D7CC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8E701556245E69120089D7CC /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		8ED85523246B8E5E00E67308 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8ED85524246B8E5E00E67308 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,47 @@
 		8E1CE49124593E050034EC03 /* Bicyclo */ = {
 			isa = PBXGroup;
 			children = (
+				8E1CE4A824593E410034EC03 /* Controller */,
+				8E1CE4A724593E3B0034EC03 /* View */,
+				8E1CE4A624593E300034EC03 /* Model */,
 				8E1CE49224593E050034EC03 /* AppDelegate.swift */,
 				8E1CE49424593E050034EC03 /* SceneDelegate.swift */,
-				8E1CE49624593E050034EC03 /* ViewController.swift */,
-				8E1CE49824593E050034EC03 /* Main.storyboard */,
 				8E1CE49B24593E070034EC03 /* Assets.xcassets */,
-				8E1CE49D24593E070034EC03 /* LaunchScreen.storyboard */,
 				8E1CE4A024593E070034EC03 /* Info.plist */,
 			);
 			path = Bicyclo;
+			sourceTree = "<group>";
+		};
+		8E1CE4A624593E300034EC03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E1CE4AB24593E810034EC03 /* Bicycle.swift */,
+				8E1CE4B1245943120034EC03 /* DummyBicycles.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E1CE4A724593E3B0034EC03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8ED85524246B8E5E00E67308 /* ProfileViewController.xib */,
+				8E1CE49D24593E070034EC03 /* LaunchScreen.storyboard */,
+				8E1CE49824593E050034EC03 /* Main.storyboard */,
+				8E1CE4AE24593F2E0034EC03 /* BicycleTableViewCell.xib */,
+				8E701556245E69120089D7CC /* DetailViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E1CE4A824593E410034EC03 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E1CE49624593E050034EC03 /* ViewController.swift */,
+				8E1CE4AD24593F2E0034EC03 /* BicycleTableViewCell.swift */,
+				8E701555245E69120089D7CC /* DetailViewController.swift */,
+				8ED85523246B8E5E00E67308 /* ProfileViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +173,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ED85526246B8E5E00E67308 /* ProfileViewController.xib in Resources */,
 				8E1CE49F24593E070034EC03 /* LaunchScreen.storyboard in Resources */,
 				8E1CE49C24593E070034EC03 /* Assets.xcassets in Resources */,
+				8E701558245E69120089D7CC /* DetailViewController.xib in Resources */,
 				8E1CE49A24593E050034EC03 /* Main.storyboard in Resources */,
+				8E1CE4B024593F2E0034EC03 /* BicycleTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +192,11 @@
 				8E1CE49724593E050034EC03 /* ViewController.swift in Sources */,
 				8E1CE49324593E050034EC03 /* AppDelegate.swift in Sources */,
 				8E1CE49524593E050034EC03 /* SceneDelegate.swift in Sources */,
+				8E1CE4AF24593F2E0034EC03 /* BicycleTableViewCell.swift in Sources */,
+				8E1CE4B2245943120034EC03 /* DummyBicycles.swift in Sources */,
+				8E1CE4AC24593E810034EC03 /* Bicycle.swift in Sources */,
+				8ED85525246B8E5E00E67308 /* ProfileViewController.swift in Sources */,
+				8E701557245E69120089D7CC /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

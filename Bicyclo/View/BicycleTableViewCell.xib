@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BicycleCell" rowHeight="100" id="KGk-i7-Jjw" customClass="BicycleTableViewCell" customModule="Bicyclo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e2J-13-wf4">
+                        <rect key="frame" x="20" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="e2J-13-wf4" secondAttribute="height" multiplier="1:1" id="21u-7J-Aac"/>
+                            <constraint firstAttribute="width" constant="80" id="Kju-Vf-haY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCj-Fy-cLD">
+                        <rect key="frame" x="120" y="10" width="284" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqX-Hp-b0k">
+                        <rect key="frame" x="120" y="40" width="284" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="zCj-Fy-cLD" secondAttribute="trailing" constant="10" id="21m-XJ-Hqb"/>
+                    <constraint firstAttribute="bottom" secondItem="e2J-13-wf4" secondAttribute="bottom" constant="10" id="68i-fZ-orX"/>
+                    <constraint firstItem="NqX-Hp-b0k" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6iO-7x-GbM"/>
+                    <constraint firstItem="zCj-Fy-cLD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="6jr-pa-DMk"/>
+                    <constraint firstItem="zCj-Fy-cLD" firstAttribute="leading" secondItem="e2J-13-wf4" secondAttribute="trailing" constant="20" id="DyT-2B-iQL"/>
+                    <constraint firstItem="e2J-13-wf4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="G0d-gz-MEC"/>
+                    <constraint firstItem="zCj-Fy-cLD" firstAttribute="leading" secondItem="e2J-13-wf4" secondAttribute="trailing" constant="20" id="hC5-IV-yiS"/>
+                    <constraint firstItem="NqX-Hp-b0k" firstAttribute="top" secondItem="zCj-Fy-cLD" secondAttribute="bottom" constant="6" id="haU-RA-jkZ"/>
+                    <constraint firstItem="e2J-13-wf4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="j2i-Qg-jFt"/>
+                    <constraint firstAttribute="trailing" secondItem="NqX-Hp-b0k" secondAttribute="trailing" constant="10" id="ogM-WF-Ap7"/>
+                    <constraint firstItem="NqX-Hp-b0k" firstAttribute="top" secondItem="zCj-Fy-cLD" secondAttribute="bottom" constant="6" id="pVb-G6-JM2"/>
+                    <constraint firstItem="NqX-Hp-b0k" firstAttribute="leading" secondItem="e2J-13-wf4" secondAttribute="trailing" constant="20" id="sCt-dg-Omo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bicycleDesc" destination="NqX-Hp-b0k" id="eSE-hn-Edo"/>
+                <outlet property="bicycleImage" destination="e2J-13-wf4" id="1AH-vS-nDt"/>
+                <outlet property="bicycleName" destination="zCj-Fy-cLD" id="xip-yf-yPR"/>
+            </connections>
+            <point key="canvasLocation" x="205.79710144927537" y="160.04464285714286"/>
+        </tableViewCell>
+    </objects>
+</document>
