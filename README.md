@@ -1,5 +1,11 @@
 # Bicyclo
 Bicycle marketplace app for Dicoding (Belajar Membuat Aplikasi iOS untuk Pemula) submission. I Got 5 stars with this project :)
 
-## Desciption
-Actually it has simple flow, user can scroll the list of item and then click the item for the detail information.
+## Submission Criteria
+1. At least main page, detail page, and about page
+2. Display image and information in List format at least 10 items
+3. Use Layout Anchors, Storyboard/XIB or SwiftUI to show image and information in detail page
+5. Display personal identity, at least name and real profile picture
+
+## Screenshot of the app
+![Bicyclo App](https://drive.google.com/uc?export=view&id=1NrZDoPWurzUSUmEkkdhyIW_heMC2pXWR)
